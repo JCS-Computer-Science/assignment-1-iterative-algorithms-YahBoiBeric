@@ -1,10 +1,11 @@
-
 function linearSearch(array, searchTerm) {
+
 	let answer = searchTerm
-	array.forEach(element => {
-		if (element = answer) {
-			//let answer = array.indexOf(element)
-			console.log (element)
+
+	array.forEach((element, index) => {
+		if (element == answer) {
+			answer = index
+			//console.log (array.indexOf(element))
 			
 			
 		}
@@ -16,10 +17,6 @@ function linearSearch(array, searchTerm) {
 
 }
 
-
-
-
-	
 
 
 
