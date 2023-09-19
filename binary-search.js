@@ -1,22 +1,37 @@
-function binarySearch(array, searchTerm) {
+function binarySearch(arr, searchTerm) {
 	let longth 
 
-	while (longth != searchTerm) {
+	//while (longth != searchTerm) {
 		
 	
+let l = arr.length
+let une = 0
+console.log(une);
+let dix = (arr.length - 1)
+console.log(dix);
+	for (let i = 0; i < l; i++) {
 
-	for (let i = 0; i < array.length; i++) {
-
-		longth = (array.length + 1)/ 2
-		let search = searchTerm[i]
+		longth = (Math.floor((une + dix )/ 2))
+		console.log(longth);
+	
+		//let search = searchTerm[i]
+		//console.log(longth)
+		//console.log(arr);
+	
 		
-		if (searchTerm == longth) {
+		if (searchTerm == arr[longth]) {
 			return longth;
-		}else if (longth > searchTerm) {
-			//like delete everything bigger than longth
+		}else if (arr[longth] > searchTerm) {
+			dix = longth - 1
+			console.log(arr); 
+			console.log(dix);
 			
-		}else if (longth < searchTerm) {
+			
+		}else if (arr[longth] < searchTerm) {
 			//OBLITERATE everything smaller than longth
+			une = longth + 1
+			console.log(arr);
+			console.log(une);
 			
 		}
 	
@@ -24,7 +39,10 @@ function binarySearch(array, searchTerm) {
 	
 	}
 }
-}
+//}
+
+
+
 
 module.exports = binarySearch;
 
