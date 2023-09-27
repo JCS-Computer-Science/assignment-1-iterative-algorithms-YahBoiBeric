@@ -6,13 +6,13 @@ function binarySearch(arr, searchTerm) {
 	
 let l = arr.length
 let une = 0
-console.log(une);
+//console.log(une);
 let dix = (arr.length - 1)
-console.log(dix);
+//console.log(dix);
 	for (let i = 0; i < l; i++) {
 
 		longth = (Math.floor((une + dix )/ 2))
-		console.log(longth);
+		//console.log(longth);
 	
 		//let search = searchTerm[i]
 		//console.log(longth)
@@ -23,15 +23,15 @@ console.log(dix);
 			return longth;
 		}else if (arr[longth] > searchTerm) {
 			dix = longth - 1
-			console.log(arr); 
-			console.log(dix);
+			//console.log(arr); 
+			//console.log(dix);
 			
 			
 		}else if (arr[longth] < searchTerm) {
 			//OBLITERATE everything smaller than longth
 			une = longth + 1
-			console.log(arr);
-			console.log(une);
+			//console.log(arr);
+			//console.log(une);
 			
 		}
 	

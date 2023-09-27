@@ -6,13 +6,8 @@ function linearSearch(array, searchTerm) {
 		if (element == answer) {
 			answer = index
 			//console.log (array.indexOf(element))
-			
-			
-		}
-
-	
-		
-	});
+			}
+		});
 	return answer;
 
 }
